@@ -1,0 +1,5 @@
+vk-api
+APScheduler
+feedparser
+pymongo
+requests
