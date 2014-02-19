@@ -9,7 +9,6 @@ Publics for example:
 
 
 Packages using:
-
  1. [vk_api](https://github.com/python273/vk_api)
  2. APScheduler
  3. feedparser
