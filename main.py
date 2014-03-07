@@ -76,7 +76,6 @@ def clean_old():
     for item in reposts:
         cur_public = str(item['public_id'])
         while db[cur_public].find().count() > 300:  # saving 300 latest entries
-            to_post = [x for x in db[cur_public].find(sort=[("_id", -1)])]
             db[cur_public].remove({'_id': to_post[0]['_id']})
 
 sched = Scheduler()
